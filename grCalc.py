@@ -3,7 +3,7 @@ from tkinter import simpledialog, messagebox
 
 #Função para somar os números e mostrar o resultado
 def somar():
-    try:
+    try: #serve para não abortar quando tiver erro
         num1 = float(entry_num1.get())
         num2 = float(entry_num2.get())
         resultado = num1 + num2
@@ -16,10 +16,10 @@ root = tk.Tk()
 root.title("Soma de Números")
 
 #Criação dos widgets
-label_num1 = tk.Label(root, text="Digite o primeiro número:")
-label_num1.pack(padx=10, pady=5)
+label_num1 = tk.Label(root, text="Digite o primeiro número:") #label é para mostrar frase
+label_num1.pack(padx=10, pady=5) #altura e comprimento
 
-entry_num1 = tk.Entry(root)
+entry_num1 = tk.Entry(root) #espera digitar, cria a caixa de texto
 entry_num1.pack(padx=10, pady=5)
 
 label_num2 = tk.Label(root, text="Digite o segundo número:")
