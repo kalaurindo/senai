@@ -9,7 +9,7 @@ janela = tk.Tk()
 janela.title("Cadastro de Cliente")
 
 # ***** Cadastro do nome do Cliente ********
-labelNome = tk.Label(janela, text ="Nome") #font=("Arial",10), fg="white", bg="black") *** para mudar estilo da fonte
+labelNome = tk.Label(janela, text ="Nome", font=("Cursive Script",10), fg="white", bg="black") 
 labelNome.pack(padx=50, pady=5)
 
 entryNome = tk.Entry(janela, width=100) 
