@@ -1,4 +1,4 @@
-print("Sistema de Cálculo de Juros")
+print("Sistema de Cálculo de Juros") 
 print("Desenvolvido por: Karina Laurindo")
 print("Copywrite 2024")
 print("versão 1.0")

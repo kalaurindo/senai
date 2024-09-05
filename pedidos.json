@@ -1,0 +1,14 @@
+[
+    {
+        "nome_lanche": "Mc",
+        "quantidade": 3,
+        "preco_unitario": 11.45,
+        "preco_total": 34.349999999999994
+    },
+    {
+        "nome_lanche": "BK",
+        "quantidade": 5,
+        "preco_unitario": 29.98,
+        "preco_total": 149.9
+    }
+]
