@@ -43,7 +43,7 @@ def salvar_pedido():
     # Verifica se o arquivo JSON já existe
     if os.path.exists("pedidos.json"):
         with open("pedidos.json", "r") as arquivo:
-            pedidos = json.load(arquivo)
+            pedidos = json.load(arquivo) 
     else:
         pedidos = []
 
@@ -67,7 +67,7 @@ def recuperar_pedido():
             return
 
         with open("pedidos.json", "r") as arquivo:
-            pedidos = json.load(arquivo)
+            pedidos = json.load(arquivo) #transforma em dicionário no python
 
         # Procura o pedido pelo nome do lanche
         for pedido in pedidos:
