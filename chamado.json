@@ -1,0 +1,28 @@
+[
+    {
+        "nome_cliente": "karina",
+        "problema": "Falha de Software",
+        "descricao": "hfddd\n",
+        "prioridade": "M\u00e9dia",
+        "data": "10/09/2024",
+        "numero_chamado": 1
+    },
+    {
+        "nome_cliente": "karina",
+        "problema": "Falha de Software",
+        "descricao": "ghrdfg\n",
+        "prioridade": "Alta",
+        "data": "10/09/2024",
+        "numero_chamado": 2
+    },
+    {
+        "nome_cliente": "kdjdjdkj",
+        "problema": "Falha de Software",
+        "descricao": "ddd\n",
+        "prioridade": "M\u00e9dia",
+        "data": "10/09/2024",
+        "numero_chamado": 3
+    },
+    "chamado.json",
+    "chamado"
+]
