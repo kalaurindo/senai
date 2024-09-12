@@ -17,6 +17,17 @@ def salvar_chamado():
     if not nome_cliente or not problema or not self_descricao or not descricao or not prioridade or not data:
         messagebox.showerror("Erro", "Preencha todos os campos!")
         return
+    
+      # Estrutura do chamado
+    chamado = {
+        "nome_cliente": nome_cliente,
+        "problema": problema,
+        "descricao": descricao,
+        "prioridade": prioridade,
+        "data": data,
+        "numero_chamado": numero_chamado
+    }
+
     # Verifica se o arquivo JSON já existe
     if os.path.exists("chamado.json"):
         with open("chamado.json", "r") as arquivo:
@@ -27,16 +38,6 @@ def salvar_chamado():
     # Adiciona o novo pedido
     chamados.append(chamado)
 
-      # Estrutura do chamado
-    chamado = {
-        "nome_cliente": nome_cliente,
-        "problema": problema,
-        "descricao": descricao,
-        "prioridade": prioridade,
-        "data": data,
-        "numero_chamado": numero_chamado,
-    }
-
     # Salva no arquivo JSON
     with open("chamado.json", "w") as arquivo:
         json.dump(chamados, arquivo, indent=4)
@@ -45,19 +46,15 @@ def salvar_chamado():
 
 #função para gerar proximo numero de chamado
 def gerar_numero():
+    numero = 1
     if os.path.exists("chamado.json"):
         with open("chamado.json", "r") as arquivo:
             chamados = json.load(arquivo) 
 
-        # Procura o pedido pelo numero do chamado
+# Procura o pedido pelo numero do chamado
         for chamado in chamados:
-            numero = chamado ["numero_chamado"]
-        numero = numero + 1
-        return numero
-
-
-    # Limpa os campos após salvar
-    limpar_campos()
+            numero = chamado ["numero_chamado"] + 1
+    return numero
 
 # Função para exibir um pedido específico
 def recuperar_chamado():
